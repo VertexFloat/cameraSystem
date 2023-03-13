@@ -50,6 +50,7 @@
 This modification gives the possibility of adding cameras, e.g. a discharge pipe camera or a rear view camera. You can easily switch between added cameras which are displayed as HUD.
 As standard, some of the originally available vehicles were equipped with camera configurations.
 <br/>
+<br />
 Change camera system mode (off/always on/only when reversing) - 'y' key (default)
 <br/>
 Next/previous camera - 'left shift + k/m' keys (default)
