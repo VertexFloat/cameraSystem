@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<cameraSystemDefaultVehicleData>
+  <vehicles>
+    <!-- Small Tractors -->
+    <vehicle xmlFilename="data/vehicles/claas/arion600/arion600.xml" price="500">
+      <cameras>
+        <camera nodeName="arion600_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 2.90644956 -1.56552541" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/caseIH/maxxum145CVX/maxxum145CVX.xml" price="500">
+      <cameras>
+        <camera nodeName="maxxum145CVX_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 2.90644956 -1.56552541" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/masseyFerguson/series6S/series6S.xml" price="500">
+      <cameras>
+        <camera nodeName="series6S_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 2.90644956 -1.56552541" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/johnDeere/series6M/series6M.xml" price="500">
+      <cameras>
+        <camera nodeName="series6M_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 2.90644956 -1.56552541" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/newHolland/t6/t6.xml" price="500">
+      <cameras>
+        <camera nodeName="t6_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 2.80644956 -1.46552541" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/fendt/vario300/vario300.xml" price="500">
+      <cameras>
+        <camera nodeName="vario300_vis" name="cameraSystem_rear_camera_name" fov="55" translation="0 2.75850892 -1.24616873" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Medium Tractors -->
+    <vehicle xmlFilename="data/vehicles/deutzFahr/series8/series8.xml" price="500">
+      <cameras>
+        <camera nodeName="series8_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 3.16584754 -1.56120157" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/johnDeere/series6R/series6R.xml" price="500">
+      <cameras>
+        <camera nodeName="series6r_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 3.22559237 -1.69030046" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/newHolland/t7/t7.xml" price="500">
+      <cameras>
+        <camera nodeName="t7_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 3.06102443 -1.01361072" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/masseyFerguson/series7710S/series7710S.xml" price="500">
+      <cameras>
+        <camera nodeName="series7710S_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 3.06584754 -1.46120157" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Large Tractors -->
+    <vehicle xmlFilename="data/vehicles/fendt/vario1000/vario1000.xml" price="500">
+      <cameras>
+        <camera nodeName="vario1000_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 3.43354154 -1.36611545" rotation="-35 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/claas/axion960TT/axion960TT.xml" price="500">
+      <cameras>
+        <camera nodeName="axion960TT_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 3.36555028 -1.39746022" rotation="-40 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/johnDeere/series7R/series7R.xml" price="500">
+      <cameras>
+        <camera nodeName="series7R_main_component1" name="cameraSystem_rear_camera_name" fov="55" translation="0 3.30373836 -2.15939903" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Harvesters -->
+    <vehicle xmlFilename="data/vehicles/claas/lexion8000/lexion8000.xml" price="1000">
+      <cameras>
+        <camera nodeName="pipePart" name="cameraSystem_pipe_camera_name" translation="0.257 -0.31603512 -0.42008334" rotation="-26.58399963 1.4664067 -0.00000235"/>
+        <camera nodeName="lexion8000_main_component1" name="cameraSystem_rear_camera_name" translation="0.004 3.21421099 -4.76880646" rotation="-25 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/newHolland/crSeries/crSeries.xml" price="1000">
+      <cameras>
+        <camera nodeName="pipeArm02" name="cameraSystem_pipe_camera_name" translation="0.26699999 -0.27608916 -0.42181608" rotation="-11 0 0"/>
+        <camera nodeName="crSeries_main_component1" name="cameraSystem_rear_camera_name" translation="0 3.84356904 -3.19992328" rotation="-50 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/fendt/ideal/ideal.xml" price="1000">
+      <cameras>
+        <camera nodeName="pipeEnd" name="cameraSystem_pipe_camera_name" translation="0.26699999 -0.27608916 -0.42181608" rotation="-30 0 0"/>
+        <camera nodeName="ideal_main_component1" name="cameraSystem_rear_camera_name" translation="0.005 3.05099201 -3.70846367" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/johnDeere/x9_1100/x9_1100.xml" price="1000">
+      <cameras>
+        <camera nodeName="x9_1100_main_component1" name="cameraSystem_rear_camera_name" translation="0 3.99250388 -4.40533257" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/johnDeere/t560/t560.xml" price="1000">
+      <cameras>
+        <camera nodeName="pipe" name="cameraSystem_pipe_camera_name" translation="0 -4.92639399 -1.43677127" rotation="-110 0 0"/>
+        <camera nodeName="t560i_main_component1" name="cameraSystem_rear_camera_name" translation="0.02 2.98628139 -4.35154963" rotation="-60 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/newHolland/chSeries/chSeries.xml" price="1000">
+      <cameras>
+        <camera nodeName="pipe" name="cameraSystem_pipe_camera_name" translation="-0.21699999 2.41948009 5.28133726" rotation="170.42399597 0 -178.9278717"/>
+        <camera nodeName="chSeries_main_component1" name="cameraSystem_rear_camera_name" translation="0 3.06048012 -4.47746468" rotation="-25 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Forage Harvesters -->
+    <vehicle xmlFilename="data/vehicles/krone/bigX1180/bigX1180.xml" price="500">
+      <cameras>
+        <camera nodeName="bigx1180_vis" name="cameraSystem_rear_camera_name" translation="0.004 2.31491542 -3.31938696" rotation="-70 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/johnDeere/series9000/series9000.xml" price="500">
+      <cameras>
+        <camera nodeName="series9000_main_component1" name="cameraSystem_rear_camera_name" translation="0.044 2.11800623 -2.59070134" rotation="-57.3370018 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Potato Technology -->
+    <vehicle xmlFilename="data/vehicles/grimme/ventor4150/ventor4150.xml" price="6000">
+      <cameras>
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_work_camera_name" translation="-1.62100005 3.52056026 -0.50443113" rotation="164.90600586 -61.09085464 179.75584412"/>
+
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_work_camera_name" translation="0.26800001 4.07678318 -1.62937248" rotation="-26.3560009 0.37028852 -0.26220098"/>
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_work_camera_name" translation="1.62100005 3.52056026 -0.50443113" rotation="164.90600586 61.09085464 -179.75584412"/>
+
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_work_camera_name" translation="-0.236 3.89128041 -2.92984438" rotation="88.27799988 79.46794128 107.63961029"/>
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_work_camera_name" translation="0.42500001 3.8871901 -2.94940901" rotation="52.64699936 -77.68510437 -85.56636047"/>
+
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_work_camera_name" translation="2.87800002 3.52866697 -6.07167816" rotation="162.36300659 89.66252899 177.94776917"/>
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_work_camera_name" translation="-0.61799997 3.73245907 -4.45722818" rotation="-33.80199814 -40.20877075 0.89331162"/>
+
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_pipe_camera_name" translation="-4.77799988 5.39225197 -4.82023191" rotation="39.06600189 52.37951279 47.44033813"/>
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_pipe_camera_name" translation="-4.61999989 5.29209805 -4.83090973" rotation="-53.77799988 -58.60188675 -25.65321732"/>
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_pipe_camera_name" translation="-2.58200002 3.18717766 -4.82023191" rotation="-15 90 0"/>
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_pipe_camera_name" translation="-2.58200002 3.18717766 -7.16200924" rotation="-15 90 0"/>
+
+        <camera nodeName="ventor4150_vis01" name="cameraSystem_rear_camera_name" translation="0 4.03024149 -7.51919651" rotation="-70 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Beet Technology -->
+    <vehicle xmlFilename="data/vehicles/ropa/panther2/panther2.xml" price="1500">
+      <cameras>
+        <camera nodeName="pipeArm3" name="cameraSystem_pipe_camera_name" fov="80" translation="-0.57200003 0.83930641 0.86855799" rotation="-11.91699982 -53.28919601 73.46573639"/>
+        <camera nodeName="pipeArm3" name="cameraSystem_pipe_camera_name" translation="-0.04 0.96415925 -0.82989693" rotation="15 -90 0"/>
+        <camera nodeName="panther2Back_vis" name="cameraSystem_rear_camera_name" translation="0 3.16373467 -5.16726732" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <vehicle xmlFilename="data/vehicles/grimme/rexor6300/rexor6300.xml" price="1500">
+      <cameras>
+        <camera nodeName="pipeArm03" name="cameraSystem_pipe_camera_name" fov="80" translation="0.46900001 0.98649007 0.96702862" rotation="-34.14799881 -55.00231552 0"/>
+        <camera nodeName="pipeArm03" name="cameraSystem_pipe_camera_name" translation="1.04799998 0.22928478 -0.96472263" rotation="-60 -90 0"/>
+        <camera nodeName="rexor6300_back_vis" name="cameraSystem_rear_camera_name" translation="0 1.78618133 -4.08138847" rotation="-45 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Grape Technology -->
+    <vehicle xmlFilename="data/vehicles/newHolland/braud9070L/braud9070L.xml" price="1000">
+      <cameras>
+        <camera nodeName="braub9070L_vis" name="cameraSystem_work_camera_name" fov="80" translation="0 2.4 0.4" rotation="110 0 180"/>
+        <camera nodeName="braub9070L_vis" name="cameraSystem_rear_camera_name" translation="0 2.51679945 -3" rotation="-50 0 0"/>
+      </cameras>
+    </vehicle>
+    <!-- Olive Technology -->
+    <vehicle xmlFilename="data/vehicles/newHolland/braud9090X/braud9090X.xml" price="1000">
+      <cameras>
+        <camera nodeName="braud9090X_vis" name="cameraSystem_work_camera_name" fov="80" translation="0 2.4 1.6" rotation="110 0 180"/>
+        <camera nodeName="braud9090X_vis" name="cameraSystem_rear_camera_name" translation="0 2.51679945 -3" rotation="-50 0 0"/>
+      </cameras>
+    </vehicle>
+  </vehicles>
+</cameraSystemDefaultVehicleData>
