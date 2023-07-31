@@ -122,7 +122,7 @@ You can just copy code below and fill it with appropriate data type. (<a href="h
 <!--
 cameraConfiguration -> name -> translation key for configuration name e.g. $l10n_configuration_valueOne
 cameraConfiguration -> price -> price of configuration e.g. "500"
-camera -> node -> node where camera will be linked, node index e.g. "0>1" or i3dMapping e.g. "vehicle_vis" - $REQUIRED
+camera -> node -> node where camera will be linked, node index e.g. "0>1" or i3dMapping e.g. "vehicle_vis" - REQUIRED
 camera -> name -> translation key for camera name e.g $l10n_camera_front_left_wheel - default camera name when not defined is "Untitled"
 camera -> fov -> camera field of view - default is "60"
 camera -> rotation -> camera rotation based on camera node e.g. "0 90 0"
