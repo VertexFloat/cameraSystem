@@ -127,6 +127,7 @@ camera -> name -> translation key for camera name e.g $l10n_camera_front_left_wh
 camera -> fov -> camera field of view - default is "60"
 camera -> rotation -> camera rotation based on camera node e.g. "0 90 0"
 camera -> translation -> camera translation based on camera node e.g. "0 5 0"
+
 Default available camera names is: (name - translation key)
 "Rear" -> $l10n_cameraSystem_rear_camera_name
 "Pipe" -> $l10n_cameraSystem_pipe_camera_name
