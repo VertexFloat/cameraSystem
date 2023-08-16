@@ -132,7 +132,6 @@ You can just copy code below and fill it with appropriate data type. (<a href="h
 | camera | activeFunc | function which return boolean whether camera is active or not | - | false |
 | camera | rotation | camera rotation | - | false |
 | camera | translation | camera translation | - | false |
-|
 
 By default, the available camera names are:
 
@@ -141,7 +140,6 @@ By default, the available camera names are:
 | $l10n_cameraSystem_rear_camera_name | Rear |
 | $l10n_cameraSystem_pipe_camera_name | Pipe |
 | $l10n_cameraSystem_work_camera_name | Work area |
-|
 
 The available activation functions are:
 
@@ -151,7 +149,6 @@ The available activation functions are:
 | getCameraSystemIsLowered | if the vehicle is lowered, it returns true | Attachable |
 | getCameraSystemIsUnfolded | if the vehicle is unfolded, it returns true | Foldable |
 | getCameraSystemIsPipeUnfolded | if the vehicle pipe is unfolded, it returns true | Pipe |
-|
 
 You can also add an objectChange to configuration
 
@@ -164,7 +161,6 @@ You can also add an objectChange to configuration
 | objectChange | node | object node which visibility will be affect, node index or i3dMapping | - | **true** |
 | objectChange | visibilityActive | whether or not object is visible in this configuration | - | - |
 | objectChange | visibilityInactive | whether or not object is visible all time | - | - |
-|
 
 You can add configurations to **mods / internalMods / dlcs / inGame** to default integration file ***CameraSystemDefaultVehicleData.xml*** as shown below
 
@@ -187,7 +183,6 @@ You can add configurations to **mods / internalMods / dlcs / inGame** to default
 | vehicle | xmlFilename | path to vehicle xml file | - | **true** |
 | vehicle | price | price of configuration | 500 | - |
 | camera | nodeName | name of i3dMapping where camera will be linked | - | **true** |
-|
 
 Prefixes for specific paths:
 
@@ -197,7 +192,6 @@ Prefixes for specific paths:
 | dlcs | dlc | *dlc/claasSaddleTracPack/vehicles/claas/xerion4000.xml* | **true** |
 | internalMods | internal | *internal/arena/caseIH/axialFlow250/axialFlow250.xml* | **true** |
 | inGame | data | *data/vehicles/claas/arion600/arion600.xml* | **true** |
-|
 
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
 
