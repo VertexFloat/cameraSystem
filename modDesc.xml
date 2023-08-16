@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="76">
+<modDesc descVersion="77">
   <author>VertexFloat</author>
-  <version>1.0.0.0</version>
+  <version>1.0.0.1</version>
   <title>
     <en>Camera System</en>
     <de>Kamerasystem</de>
@@ -10,91 +10,81 @@
   </title>
   <description>
     <en><![CDATA[This modification gives the possibility of adding cameras, e.g. a discharge pipe camera or a rear view camera. You can easily switch between added cameras which are displayed as HUD.
-As standard, some of the originally available vehicles were equipped with camera configurations.
+As standard, some of the originally available <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">vehicles and implements</a> were equipped with camera configurations.
 
-Change camera system mode (off/always on/only when reversing) - "z" key (default)
+Change camera system mode (off/on) - "z" key (default)
 Next/previous camera - "left shift + k/m" keys (default)
+
+Changelog (1.0.0.1):
+- added more default in-game vehicles and implements support
+- added compatibility with implements
+- improved code
 
 For more information, vehicle integration instructions, help or a bug report, please visit <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
 
 ATTENTION!
 * to activate the camera system, the vehicle must have their configuration added,
-* the image quality of the cameras is the highest I could set, so please bear with me. (The quality of the camera also depends on your graphics settings, it is also possible to manually improve it, details are also on <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>)]]></en>
+* the image quality of the cameras is the highest I could set, so please bear with me. (The quality of the camera also depends on your graphics settings, it is also possible to manually improve it, details are also on <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></en>
     <de><![CDATA[Diese Modifikation bietet die Möglichkeit, Kameras hinzuzufügen, z. eine Abflussrohrkamera oder eine Rückfahrkamera. Sie können einfach zwischen hinzugefügten Kameras wechseln, die als HUD angezeigt werden.
-Einige der ursprünglich verfügbaren Fahrzeuge waren serienmäßig mit Kamerakonfigurationen ausgestattet.
+Standardmäßig waren einige der ursprünglich verfügbaren <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">Fahrzeuge und Anbaugeräte</a> mit Kamerakonfigurationen ausgestattet.
 
-Kamerasystemmodus ändern (aus/immer an/nur beim Rückwärtsfahren) – Taste „z“ (Standard)
+Kamerasystemmodus ändern (aus/ein) – „z“-Taste (Standard)
 Nächste/vorherige Kamera – Tasten „linke Umschalttaste + k/m“ (Standard)
+
+Änderungsprotokoll (1.0.0.1):
+- Unterstützung für weitere Standardfahrzeuge und -geräte im Spiel hinzugefügt
+- Implementierungskompatibilität hinzugefügt
+- verbesserter Code
 
 Weitere Informationen, Anweisungen zur Fahrzeugintegration, Hilfe oder einen Fehlerbericht finden Sie auf <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
 
 AUFMERKSAMKEIT!
 * um das Kamerasystem zu aktivieren, muss dem Fahrzeug seine Konfiguration hinzugefügt werden,
-* Die Bildqualität der Kameras ist die höchste, die ich einstellen konnte, also haben Sie bitte etwas Geduld. (Die Qualität der Kamera hängt auch von Ihren Grafikeinstellungen ab, es ist auch möglich, sie manuell zu verbessern, Details finden Sie auch auf <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>)]]></de>
+* Die Bildqualität der Kameras ist die höchste, die ich einstellen konnte, also haben Sie bitte etwas Geduld. (Die Qualität der Kamera hängt auch von Ihren Grafikeinstellungen ab, es ist auch möglich, sie manuell zu verbessern, Details finden Sie auch auf <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></de>
     <fr><![CDATA[Cette modification donne la possibilité d"ajouter des caméras, par ex. un tuyau d"évacuation ou une caméra de recul. Vous pouvez facilement basculer entre les caméras ajoutées qui sont affichées sous forme de HUD.
-En standard, certains des véhicules disponibles à l"origine étaient équipés de configurations de caméras.
+En standard, certains des <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">véhicules et outils</a> disponibles à l'origine étaient équipés de configurations de caméra.
 
-Changer le mode du système de caméra (désactivé/toujours activé/uniquement en marche arrière) - touche "z" (par défaut)
+Changer le mode système de la caméra (off/on) - touche "z" (par défaut)
 Appareil photo suivant/précédent - touches "shift gauche + k/m" (par défaut)
+
+Journal des modifications (1.0.0.1) :
+- ajout de la prise en charge de plus de véhicules et d'outils par défaut dans le jeu
+- ajout de la compatibilité des outils
+- code amélioré
 
 Pour plus d"informations, des instructions d"intégration de véhicule, de l"aide ou un rapport de bogue, veuillez visiter <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
 
 ATTENTION!
 * pour activer le système de caméra, le véhicule doit avoir sa configuration ajoutée,
-* la qualité d'image des caméras est la plus élevée que je puisse définir, alors soyez indulgent avec moi. (La qualité de la caméra dépend aussi de vos paramètres graphiques, il est aussi possible de l'améliorer manuellement, les détails sont aussi sur <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>)]]></fr>
+* la qualité d'image des caméras est la plus élevée que je puisse définir, alors soyez indulgent avec moi. (La qualité de la caméra dépend aussi de vos paramètres graphiques, il est aussi possible de l'améliorer manuellement, les détails sont aussi sur <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></fr>
     <pl><![CDATA[Modyfikacja ta daje możliwość dodania kamer np. kamery rury wyładowczej lub kamery wstecznej. Z łatwością można przełączać się między dodanymi kamerami które wyświetlane są w postaci HUD.
-Standardowo część dostępnych oryginalnie pojazdów została wyposażona w konfiguracje kamer.
+Standardowo część dostępnych oryginalnie <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">pojazdów oraz narzędzi</a> została wyposażona w konfiguracje kamer.
 
-Zmień tryb systemu kamer (wyłączony/włączony zawsze/tylko podczas cofania) - klawisz "z" (standardowo)
+Zmień tryb systemu kamer (wyłączony/włączony) - klawisz "z" (standardowo)
 Następna/poprzednia kamera - klawisze "lewy shift + k/m" (standardowo)
+
+Dziennik zmian (1.0.0.1):
+- dodano wsparcie dla większej ilości domyślnych pojazdów w grze i narzędzi
+- dodano kompatybilność z narzędziami
+- ulepszony kod
 
 Po więcej informacji, instrukcje integracji pojazdu, pomoc lub zgłoszenie błędu, odwiedź stronę <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
 
 UWAGA!
 * żeby aktywować system kamer, pojazd musi mieć dodaną ich konfigurację,
-* jakość obrazu kamer, jest najwyższa jaką miałem możliwość ustawić, więc proszę o wyrozumiałość. (Jakość kamery zależy również od twoich ustawień graficznych, jest również możliwość manualnego poprawienia jej, szczegóły są również na <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>)]]></pl>
+* jakość obrazu kamer, jest najwyższa jaką miałem możliwość ustawić, więc proszę o wyrozumiałość. (Jakość kamery zależy również od twoich ustawień graficznych, jest również możliwość manualnego poprawienia jej, szczegóły są również na <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></pl>
   </description>
   <iconFilename>icon_cameraSystem.png</iconFilename>
   <multiplayer supported="true"/>
 
   <l10n>
-    <text name="action_changeCamera">
-      <en>Switch camera</en>
-      <de>Kamera wechseln</de>
-      <fr>Changer de caméra</fr>
-      <pl>Zmień kamerę</pl>
-    </text>
-    <text name="action_cameraSystem_off">
-      <en>Camera system (off)</en>
-      <de>Kamerasystem (aus)</de>
-      <fr>Système de caméra (éteint)</fr>
-      <pl>System kamer (wyłączony)</pl>
-    </text>
-    <text name="action_cameraSystem_on">
-      <en>Camera system (on)</en>
-      <de>Kamerasystem (ein)</de>
-      <fr>Système de caméra (activé)</fr>
-      <pl>System kamer (włączony)</pl>
-    </text>
-    <text name="action_cameraSystem_on_always">
-      <en>Camera system (always on)</en>
-      <de>Kamerasystem (immer an)</de>
-      <fr>Système de caméra (toujours allumé)</fr>
-      <pl>System kamer (zawsze włączony)</pl>
-    </text>
-    <text name="action_cameraSystem_on_backward">
-      <en>Camera system (only when reversing)</en>
-      <de>Kamerasystem (nur beim Rückwärtsfahren)</de>
-      <fr>Système de caméra (uniquement en marche arrière)</fr>
-      <pl>System kamer (tylko podczas cofania)</pl>
-    </text>
-    <text name="configuration_cameraSystem">
+    <text name="ui_cameraSystem_header">
       <en>Camera System</en>
       <de>Kamerasystem</de>
       <fr>Système De Caméra</fr>
       <pl>System Kamer</pl>
     </text>
-    <text name="ui_cameraSystem_header">
+    <text name="configuration_cameraSystem">
       <en>Camera System</en>
       <de>Kamerasystem</de>
       <fr>Système De Caméra</fr>
@@ -124,11 +114,29 @@ UWAGA!
       <fr>Zone de travail</fr>
       <pl>Obszar roboczy</pl>
     </text>
-    <text name="cameraSystem_camera_error">
-      <en>Cannot connect to the camera!</en>
-      <de>Verbindung zur Kamera nicht möglich!</de>
-      <fr>Impossible de se connecter à la caméra!</fr>
-      <pl>Nie można połączyć się z kamerą!</pl>
+    <text name="cameraSystem_camera_info_reverse">
+      <en>Gear must be in reverse!</en>
+      <de>Der Gang muss im Rückwärtsgang sein!</de>
+      <fr>La vitesse doit être en marche arrière !</fr>
+      <pl>Bieg musi być na biegu wstecznym!</pl>
+    </text>
+    <text name="cameraSystem_camera_info_lowered">
+      <en>You need to lower %s!</en>
+      <de>Sie müssen %s senken!</de>
+      <fr>Vous devez baisser %s !</fr>
+      <pl>Musisz opuścić %s!</pl>
+    </text>
+    <text name="cameraSystem_camera_info_unfolded">
+      <en>You need to unfold %s!</en>
+      <de>Du musst %s entfalten!</de>
+      <fr>Vous devez déplier %s !</fr>
+      <pl>Musisz rozłożyć %s!</pl>
+    </text>
+    <text name="cameraSystem_camera_info_pipeUnfolded">
+      <en>The pipe must be unfolded!</en>
+      <de>Das Rohr muss entfaltet sein!</de>
+      <fr>Le tuyau doit être déplié !</fr>
+      <pl>Rura musi być rozłożona!</pl>
     </text>
     <text name="cameraSystem_camera_id">
       <en>%s/%s</en>
@@ -136,11 +144,29 @@ UWAGA!
       <fr>%s/%s</fr>
       <pl>%s/%s</pl>
     </text>
+    <text name="action_cameraSystem_on">
+      <en>Camera system (on)</en>
+      <de>Kamerasystem (ein)</de>
+      <fr>Système de caméra (activé)</fr>
+      <pl>System kamer (włączony)</pl>
+    </text>
+    <text name="action_cameraSystem_off">
+      <en>Camera system (off)</en>
+      <de>Kamerasystem (aus)</de>
+      <fr>Système de caméra (éteint)</fr>
+      <pl>System kamer (wyłączony)</pl>
+    </text>
     <text name="input_TOGGLE_CAMERA_SYSTEM">
       <en>Change camera system mode</en>
       <de>Ändern Sie den Kamerasystemmodus</de>
       <fr>Changer le mode du système de caméra</fr>
       <pl>Zmień tryb systemu kamer</pl>
+    </text>
+    <text name="action_cameraSystem_switch_camera">
+      <en>Switch camera</en>
+      <de>Kamera wechseln</de>
+      <fr>Changer de caméra</fr>
+      <pl>Zmień kamerę</pl>
     </text>
     <text name="input_TOGGLE_CAMERA_SYSTEM_CAMERA_1">
       <en>Switch to the next camera</en>
@@ -157,7 +183,10 @@ UWAGA!
   </l10n>
 
   <specializations>
-    <specialization name="vehicleCameraSystem" className="VehicleCameraSystem" filename="src/vehicles/specializations/VehicleCameraSystem.lua"/>
+    <specialization name="cameraSystem" className="CameraSystem" filename="src/vehicles/specializations/CameraSystem.lua"/>
+    <specialization name="cameraSystemEnterable" className="CameraSystemEnterable" filename="src/vehicles/specializations/CameraSystemEnterable.lua"/>
+    <specialization name="cameraSystemAttachable" className="CameraSystemAttachable" filename="src/vehicles/specializations/CameraSystemAttachable.lua"/>
+    <specialization name="cameraSystemAttacherJoints" className="CameraSystemAttacherJoints" filename="src/vehicles/specializations/CameraSystemAttacherJoints.lua"/>
   </specializations>
 
   <actions>
@@ -176,6 +205,6 @@ UWAGA!
   </inputBinding>
 
   <extraSourceFiles>
-    <sourceFile filename="src/CameraSystem.lua"/>
+    <sourceFile filename="src/main.lua"/>
   </extraSourceFiles>
 </modDesc>
