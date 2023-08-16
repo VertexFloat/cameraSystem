@@ -162,7 +162,7 @@ You can also add an objectChange to configuration
 | objectChange | visibilityActive | whether or not object is visible in this configuration | - | - |
 | objectChange | visibilityInactive | whether or not object is visible all time | - | - |
 
-You can add configurations to **mods / internalMods / dlcs / inGame** to default integration file ***CameraSystemDefaultVehicleData.xml*** as shown below
+You can add configurations to **mods/internalMods/dlcs/inGame** to default integration file ***CameraSystemDefaultVehicleData.xml*** as shown below
 
 ```xml
 <cameraSystemDefaultVehicleData>
