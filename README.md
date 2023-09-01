@@ -63,6 +63,7 @@ Next/previous camera - "left shift + k/m" keys (default)
 
 ATTENTION!
 - to activate the camera system, the vehicle must have their configuration added,
+- some cameras can cause fps drops, unfortunately this is due to the game engine so I can't do anything about it,
 - the image quality of the cameras is the highest I could set, so please bear with me. (The quality of the camera also depends on your graphics settings, it is also possible to manually improve it, details are below)
 
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
@@ -127,7 +128,7 @@ You can just copy code below and fill it with appropriate data type. (<a href="h
 | camera | node | node where camera will be linked, node index or i3dMapping | - | **true** |
 | camera | name | translation key for camera name or camera name | Untitled | false |
 | camera | fov | camera field of view | 60 | false |
-| camera | nearClip | camera near clip | 0.1 | false |
+| camera | nearClip | camera near clip | 0.01 | false |
 | camera | farClip | camera far clip | 10000 | false |
 | camera | activeFunc | function which return boolean whether camera is active or not | - | false |
 | camera | rotation | camera rotation | - | false |
@@ -137,9 +138,9 @@ By default, the available camera names are:
 
 | Key | Text |
 | --- | --- |
-| $l10n_cameraSystem_rear_camera_name | Rear |
-| $l10n_cameraSystem_pipe_camera_name | Pipe |
-| $l10n_cameraSystem_work_camera_name | Work area |
+| $l10n_ui_cameraSystem_nameRear | Rear |
+| $l10n_ui_cameraSystem_namePipe | Pipe |
+| $l10n_ui_cameraSystem_nameWork | Work area |
 
 The available activation functions are:
 
@@ -169,7 +170,7 @@ You can add configurations to **mods/internalMods/dlcs/inGame** to default integ
   <vehicles>
     <vehicle xmlFilename="string" price="integer">
       <cameras>
-        <camera nodeName="string" name="string" fov="float" nearClip="float" farClip="float" activeFunc="string" rotation="x y z" translation="x y z"/>
+        <camera nodeName="string" visibilityNodeName="string" name="string" fov="float" nearClip="float" farClip="float" activeFunc="string" rotation="x y z" translation="x y z"/>
       </cameras>
     </vehicle>
   </vehicles>
@@ -183,6 +184,7 @@ You can add configurations to **mods/internalMods/dlcs/inGame** to default integ
 | vehicle | xmlFilename | path to vehicle xml file | - | **true** |
 | vehicle | price | price of configuration | 500 | - |
 | camera | nodeName | name of i3dMapping where camera will be linked | - | **true** |
+| camera | visibilityNodeName | name of i3dMapping node that visibility is needed | - | - |
 
 Prefixes for specific paths:
 
