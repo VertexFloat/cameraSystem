@@ -1,8 +1,12 @@
 -- @author: 4c65736975, All Rights Reserved
--- @version: 1.0.0.0, 24|03|2023
+-- @version: 1.0.0.1, 12|08|2023
 -- @filename: CameraSystemDefaultVehicleData.lua
 
+-- Changelog (1.0.0.1):
+-- added option to add cameras to mod/internalMod/dlc vehicles
+
 CameraSystemDefaultVehicleData = {
+  MOD_NAME = g_currentModName,
   MOD_DIRECTORY = g_currentModDirectory,
   CONFIG_XML_KEY = "cameraSystemDefaultVehicleData.vehicles.vehicle(?).cameras.camera(?)",
   XML_SCHEMA = nil
@@ -39,8 +43,8 @@ function CameraSystemDefaultVehicleData:loadDefualtVehicleCameraSystemData()
 
     xmlFile:iterate("cameraSystemDefaultVehicleData.vehicles.vehicle", function (_, key)
       local vehicle = {
-        xmlFilename = xmlFile:getValue(key .. "#xmlFilename"),
-        price = xmlFile:getValue(key .. "#price")
+        xmlFilename = self:getVehicleXmlFilenamePath(xmlFile:getValue(key .. "#xmlFilename")),
+        price = xmlFile:getValue(key .. "#price", 500)
       }
 
       if vehicle.xmlFilename ~= nil then
@@ -57,10 +61,19 @@ function CameraSystemDefaultVehicleData:loadDefualtVehicleCameraSystemData()
             return false
           end
 
-          camera.name = g_i18n:getText(xmlFile:getValue(cameraKey .. "#name", "cameraSystem_default_camera_name"))
+          local visibilityNodeName = xmlFile:getValue(cameraKey .. "#visibilityNodeName")
+
+          if visibilityNodeName ~= "" then
+            camera.visibilityNodeName = visibilityNodeName
+          end
+
+          camera.name = xmlFile:getValue(cameraKey .. "#name", "ui_cameraSystem_nameDefault", CameraSystemDefaultVehicleData.MOD_NAME)
           camera.translation = xmlFile:getValue(cameraKey .. "#translation", "0 0 0", true)
           camera.rotation = xmlFile:getValue(cameraKey .. "#rotation", "0 0 0", true)
-          camera.fov = math.rad(xmlFile:getValue(cameraKey .. "#fov", 60))
+          camera.fov = xmlFile:getValue(cameraKey .. "#fov", 60)
+          camera.nearClip = xmlFile:getValue(cameraKey .. "#nearClip", 0.01)
+          camera.farClip = xmlFile:getValue(cameraKey .. "#farClip", 10000)
+          camera.activeFunc = xmlFile:getValue(cameraKey .. "#activeFunc")
 
           table.insert(vehicle.cameras, camera)
         end)
@@ -126,6 +139,22 @@ function CameraSystemDefaultVehicleData:overwriteGameFunctions(cameraSystem)
   end)
 end
 
+function CameraSystemDefaultVehicleData:getVehicleXmlFilenamePath(xmlFilename)
+  if xmlFilename:sub(1, 3) == "mod" then
+    xmlFilename = g_modsDirectory .. xmlFilename:sub(5)
+  end
+
+  if xmlFilename:sub(1, 3) == "dlc" then
+    xmlFilename = getAppBasePath() .. "pdlc/" .. xmlFilename:sub(5)
+  end
+  -- needs to be tested
+  if xmlFilename:sub(1, 8) == "internal" then
+    xmlFilename = g_internalModsDirectory .. xmlFilename:sub(10)
+  end
+
+  return xmlFilename
+end
+
 function CameraSystemDefaultVehicleData:getCameraSystemDefaultData(configFilename)
   for i = 1, #self.cameraData do
     local vehicleData = self.cameraData[i]
@@ -144,9 +173,13 @@ function CameraSystemDefaultVehicleData:registerXMLPaths(schema)
   schema:register(XMLValueType.STRING, "cameraSystemDefaultVehicleData.vehicles.vehicle(?)#xmlFilename", "Vehicle filename")
   schema:register(XMLValueType.STRING, "cameraSystemDefaultVehicleData.vehicles.vehicle(?)#price", "Vehicle configuration price")
 
-  schema:register(XMLValueType.L10N_STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#name", "Camera name", "cameraSystem_default_camera_name")
+  schema:register(XMLValueType.L10N_STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#name", "Camera name")
   schema:register(XMLValueType.STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#nodeName", "Target node name")
+  schema:register(XMLValueType.STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#visibilityNodeName", "Target node name that visibility is needed")
   schema:register(XMLValueType.VECTOR_TRANS, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#translation", "Camera position")
   schema:register(XMLValueType.VECTOR_ROT, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#rotation", "Camera rotation")
   schema:register(XMLValueType.FLOAT, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#fov", "Camera field of view")
+  schema:register(XMLValueType.FLOAT, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#nearClip", "Camera near clip")
+  schema:register(XMLValueType.FLOAT, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#farClip", "Camera far clip")
+  schema:register(XMLValueType.STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#activeFunc", "Camera activation function")
 end

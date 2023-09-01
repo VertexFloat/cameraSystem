@@ -54,15 +54,16 @@
 <img src="screenshots/screenShot (1).png" alt="screenshot">
 
 This modification gives the possibility of adding cameras, e.g. a discharge pipe camera or a rear view camera. You can easily switch between added cameras which are displayed as HUD.
-As standard, some of the originally available vehicles were equipped with camera configurations.
+As standard, some of the originally available vehicles and implements were equipped with camera configurations.
 <br/>
 <br/>
-Change camera system mode (off/always on/only when reversing) - "z" key (default)
+Change camera system mode (off/on) - "z" key (default)
 <br/>
 Next/previous camera - "left shift + k/m" keys (default)
 
 ATTENTION!
 - to activate the camera system, the vehicle must have their configuration added,
+- some cameras can cause fps drops, unfortunately this is due to the game engine so I can't do anything about it,
 - the image quality of the cameras is the highest I could set, so please bear with me. (The quality of the camera also depends on your graphics settings, it is also possible to manually improve it, details are below)
 
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
@@ -101,7 +102,7 @@ or
 You can improve camera quality (dust, effects) by <font color="#f54040">changing</font> the code as shown below. <font color="#f54040">Note that with this change you will get a lua error from time to time, but the game will run fine.</font>
 
 ```lua
-src/gui/hud/elements/CameraRenderElement.lua
+src/vehicles/VehicleRenderCamera.lua
 
 local development = false -- change to true
 ```
@@ -114,62 +115,85 @@ You can just copy code below and fill it with appropriate data type. (<a href="h
 <cameraSystem>
   <cameraConfigurations>
     <cameraConfiguration name="string" price="integer">
-      <camera node="node" name="string" fov="float" rotation="x y z" translation="x y z"/>
-    </cameraConfiguration>
-  </cameraConfigurations>
-</cameraSystem>
-
-<!--
-cameraConfiguration -> name -> translation key for configuration name e.g. $l10n_configuration_valueOne
-cameraConfiguration -> price -> price of configuration e.g. "500"
-camera -> node -> node where camera will be linked, node index e.g. "0>1" or i3dMapping e.g. "vehicle_vis" - REQUIRED
-camera -> name -> translation key for camera name e.g $l10n_camera_front_left_wheel - default camera name when not defined is "Untitled"
-camera -> fov -> camera field of view - default is "60"
-camera -> rotation -> camera rotation based on camera node e.g. "0 90 0"
-camera -> translation -> camera translation based on camera node e.g. "0 5 0"
-
-Default available camera names is: (name - translation key)
-"Rear" -> $l10n_cameraSystem_rear_camera_name
-"Pipe" -> $l10n_cameraSystem_pipe_camera_name
-"Work area" -> $l10n_cameraSystem_work_camera_name
--->
-```
-
-You can also add an objectChange (you decide whether the defined object should be hidden in this configuration or shown, it can also be visible all the time)
-
-```xml
-<cameraConfiguration name="$l10n_configuration_valueYes" price="100">
-  <camera node="0>1"/>
-  <objectChange node="node" visibilityActive="boolean" visibilityInactive="boolean"/>
-</cameraConfiguration>
-
-<!--
-objectChange -> node -> object node which visibility will be affect, node index e.g. "0>4>5" or i3dMapping e.g. "camera_node_top"
-objectChange -> visibilityActive -> whether or not object from object node is visible in this configuration
-objectChange -> visibilityInactive -> whether or not object from object node is visible all time
--->
-```
-
-You can add as many configurations and cameras as the game allows you.
-
-```xml
-<cameraSystem>
-  <cameraConfigurations>
-    <cameraConfiguration name="$l10n_configuration_valueNo" price="0"/>
-
-    <cameraConfiguration name="$l10n_configuration_valueOne" price="200">
-      <camera node="magnum7240pro_main_component1"/>
-    </cameraConfiguration>
-
-    <cameraConfiguration name="$l10n_configuration_valueAll" price="500">
-      <camera node="magnum7240pro_main_component1" fov="75" translation="0 3.2 0" rotation="-25 180 0"/>
-      <camera node="0>1" name="$l10n_cameraSystem_rear_camera_name" rotation="0 180 0"/>
-
-      <objectChange node="0>0|17" visibilityActive="true" visibilityInactive="false"/>
+      <camera node="node" name="string" fov="float" nearClip="float" farClip="float" activeFunc="string" rotation="x y z" translation="x y z"/>
     </cameraConfiguration>
   </cameraConfigurations>
 </cameraSystem>
 ```
+
+| Tag | Attribute | Description | Default | isRequired |
+| --- | --- | --- | :---: | :---: |
+| cameraConfiguration | name | translation key for configuration name or configuration name | - | - |
+| cameraConfiguration | price | price of configuration | - | - |
+| camera | node | node where camera will be linked, node index or i3dMapping | - | **true** |
+| camera | name | translation key for camera name or camera name | Untitled | false |
+| camera | fov | camera field of view | 60 | false |
+| camera | nearClip | camera near clip | 0.01 | false |
+| camera | farClip | camera far clip | 10000 | false |
+| camera | activeFunc | function which return boolean whether camera is active or not | - | false |
+| camera | rotation | camera rotation | - | false |
+| camera | translation | camera translation | - | false |
+
+By default, the available camera names are:
+
+| Key | Text |
+| --- | --- |
+| $l10n_ui_cameraSystem_nameRear | Rear |
+| $l10n_ui_cameraSystem_namePipe | Pipe |
+| $l10n_ui_cameraSystem_nameWork | Work area |
+
+The available activation functions are:
+
+| Name | Description | Required Specialization |
+| --- | --- | ---: |
+| getCameraSystemIsReverse | if the vehicle is going backwards, it returns true | Drivable |
+| getCameraSystemIsLowered | if the vehicle is lowered, it returns true | Attachable |
+| getCameraSystemIsUnfolded | if the vehicle is unfolded, it returns true | Foldable |
+| getCameraSystemIsPipeUnfolded | if the vehicle pipe is unfolded, it returns true | Pipe |
+
+You can also add an objectChange to configuration
+
+```xml
+<objectChange node="node" visibilityActive="boolean" visibilityInactive="boolean"/>
+```
+
+| Tag | Attribute | Description | Default | isRequired |
+| --- | --- | --- | :---: | :---: |
+| objectChange | node | object node which visibility will be affect, node index or i3dMapping | - | **true** |
+| objectChange | visibilityActive | whether or not object is visible in this configuration | - | - |
+| objectChange | visibilityInactive | whether or not object is visible all time | - | - |
+
+You can add configurations to **mods/internalMods/dlcs/inGame** to default integration file ***CameraSystemDefaultVehicleData.xml*** as shown below
+
+```xml
+<cameraSystemDefaultVehicleData>
+  <vehicles>
+    <vehicle xmlFilename="string" price="integer">
+      <cameras>
+        <camera nodeName="string" visibilityNodeName="string" name="string" fov="float" nearClip="float" farClip="float" activeFunc="string" rotation="x y z" translation="x y z"/>
+      </cameras>
+    </vehicle>
+  </vehicles>
+</cameraSystemDefaultVehicleData>
+```
+
+**Rest of camera attributes are the same as shown above**
+
+| Tag | Attribute | Description | Default | isRequired |
+| --- | --- | --- | :---: | :---: |
+| vehicle | xmlFilename | path to vehicle xml file | - | **true** |
+| vehicle | price | price of configuration | 500 | - |
+| camera | nodeName | name of i3dMapping where camera will be linked | - | **true** |
+| camera | visibilityNodeName | name of i3dMapping node that visibility is needed | - | - |
+
+Prefixes for specific paths:
+
+| Path | Prefix | Example | isRequired |
+| --- | --- | --- | :---: |
+| mods | mod | *mod/FS22_caseIHMagnum7240Pro/magnum7240Pro.xml* | **true** |
+| dlcs | dlc | *dlc/claasSaddleTracPack/vehicles/claas/xerion4000.xml* | **true** |
+| internalMods | internal | *internal/arena/caseIH/axialFlow250/axialFlow250.xml* | **true** |
+| inGame | data | *data/vehicles/claas/arion600/arion600.xml* | **true** |
 
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
 

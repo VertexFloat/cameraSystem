@@ -22,7 +22,7 @@ function CameraSystemInputHelpDisplayExtension:overwriteGameFunctions(cameraSyst
     superFunc(self, dt)
 
     for _, extension in pairs(self.vehicleHudExtensions) do
-      if extension:isa(VehicleCameraSystemHUDExtension) then
+      if extension:isa(CameraSystemHUDExtension) then
         if extension:canDraw() then
           extension:update(dt)
         end
@@ -79,11 +79,12 @@ function CameraSystemInputHelpDisplayExtension:drawVehicleHUDExtensionss(inputHe
   if inputHelpDisplay.extensionsHeight > 0 then
     local leftPosX, posY = self:getInputHelpBasePosition()
     local width = inputHelpDisplay:getWidth()
+
     posY = posY + inputHelpDisplay.frameOffsetY
     local usedHeight = 0
 
     for _, extension in pairs(inputHelpDisplay.vehicleHudExtensions) do
-      if extension:isa(VehicleCameraSystemHUDExtension) then
+      if extension:isa(CameraSystemHUDExtension) then
         local extHeight = extension:getDisplayHeight()
 
         if extension:canDraw() and usedHeight + extHeight <= inputHelpDisplay.extensionsHeight then
