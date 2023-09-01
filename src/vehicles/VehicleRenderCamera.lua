@@ -25,7 +25,7 @@ function VehicleRenderCamera:loadFromXML(xmlFile, key, savegame)
     return false
   end
 
-  local name = xmlFile:getValue(key .. "#name", "$l10n_cameraSystem_default_camera_name")
+  local name = xmlFile:getValue(key .. "#name", "$l10n_ui_cameraSystem_nameDefault")
 
   if name:sub(1, 6) == "$l10n_" then
     name = name:sub(7)
@@ -39,13 +39,13 @@ function VehicleRenderCamera:loadFromXML(xmlFile, key, savegame)
 
   self.name = name
   self.fovY = xmlFile:getValue(key .. "#fov", 60)
-  self.nearClip = xmlFile:getValue(key .. "#nearClip", 0.1)
+  self.nearClip = xmlFile:getValue(key .. "#nearClip", 0.01)
   self.farClip = xmlFile:getValue(key .. "#farClip", 10000)
   self.translation = xmlFile:getValue(key .. "#translation", "0 0 0", true)
   self.rotation = xmlFile:getValue(key .. "#rotation", "0 0 0", true)
   self.activeFunc = xmlFile:getValue(key .. "#activeFunc")
 
-  self:createCameraRender()
+  self:createRender()
 
   return true
 end
@@ -54,7 +54,7 @@ function VehicleRenderCamera:loadFromConfig(camera)
   self.cameraNode = camera.node
 
   if self.cameraNode == nil then
-    Logging.xmlWarning(xmlFile, "Invalid camera node for camera node name '%s'!", camera.nodeName)
+    Logging.xmlWarning(xmlFile, "Given node for node name '%s' doesn't exists in '%s'!", camera.nodeName, self.vehicle.configFileName)
 
     return false
   end
@@ -67,12 +67,12 @@ function VehicleRenderCamera:loadFromConfig(camera)
   self.rotation = camera.rotation
   self.activeFunc = camera.activeFunc
 
-  self:createCameraRender()
+  self:createRender()
 
   return true
 end
 
-function VehicleRenderCamera:createCameraRender()
+function VehicleRenderCamera:createRender()
   self.camera = createCamera(self.name, math.rad(self.fovY), self.nearClip, self.farClip)
 
   link(self.cameraNode, self.camera)
