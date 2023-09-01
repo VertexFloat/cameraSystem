@@ -61,11 +61,17 @@ function CameraSystemDefaultVehicleData:loadDefualtVehicleCameraSystemData()
             return false
           end
 
-          camera.name = xmlFile:getValue(cameraKey .. "#name", "cameraSystem_default_camera_name", CameraSystemDefaultVehicleData.MOD_NAME)
+          local visibilityNodeName = xmlFile:getValue(cameraKey .. "#visibilityNodeName")
+
+          if visibilityNodeName ~= "" then
+            camera.visibilityNodeName = visibilityNodeName
+          end
+
+          camera.name = xmlFile:getValue(cameraKey .. "#name", "ui_cameraSystem_nameDefault", CameraSystemDefaultVehicleData.MOD_NAME)
           camera.translation = xmlFile:getValue(cameraKey .. "#translation", "0 0 0", true)
           camera.rotation = xmlFile:getValue(cameraKey .. "#rotation", "0 0 0", true)
           camera.fov = xmlFile:getValue(cameraKey .. "#fov", 60)
-          camera.nearClip = xmlFile:getValue(cameraKey .. "#nearClip", 0.1)
+          camera.nearClip = xmlFile:getValue(cameraKey .. "#nearClip", 0.01)
           camera.farClip = xmlFile:getValue(cameraKey .. "#farClip", 10000)
           camera.activeFunc = xmlFile:getValue(cameraKey .. "#activeFunc")
 
@@ -169,6 +175,7 @@ function CameraSystemDefaultVehicleData:registerXMLPaths(schema)
 
   schema:register(XMLValueType.L10N_STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#name", "Camera name")
   schema:register(XMLValueType.STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#nodeName", "Target node name")
+  schema:register(XMLValueType.STRING, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#visibilityNodeName", "Target node name that visibility is needed")
   schema:register(XMLValueType.VECTOR_TRANS, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#translation", "Camera position")
   schema:register(XMLValueType.VECTOR_ROT, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#rotation", "Camera rotation")
   schema:register(XMLValueType.FLOAT, CameraSystemDefaultVehicleData.CONFIG_XML_KEY .. "#fov", "Camera field of view")
