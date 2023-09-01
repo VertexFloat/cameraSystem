@@ -44,7 +44,7 @@ function CameraSystemEnterable:onLoad(savegame)
   spec.texts = {
     inputToggleCameraSystemOn = g_i18n:getText("action_cameraSystem_on", self.customEnvironment),
     inputToggleCameraSystemOff = g_i18n:getText("action_cameraSystem_off", self.customEnvironment),
-    inputToggleCameraSystemSwitchCamera = g_i18n:getText("action_cameraSystem_switch_camera", self.customEnvironment),
+    inputToggleCameraSystemSwitchCamera = g_i18n:getText("action_cameraSystem_switchCamera", self.customEnvironment),
   }
   spec.camIndex = 1
   spec.hasCameras = self:getNumOfCameraSystemCameras() > 0
@@ -138,6 +138,8 @@ function CameraSystemEnterable:addToolCameraSystemCameras(cameras)
   if spec.hasCameras then
     self:setActiveCameraSystemCameraIndex(spec.camIndex)
   end
+  -- we have to hard request actions update because some of implements have delay in function execution
+  self:requestActionEventUpdate()
 end
 
 function CameraSystemEnterable:removeToolCameraSystemCameras(cameras)
