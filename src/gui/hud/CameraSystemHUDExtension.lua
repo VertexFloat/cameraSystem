@@ -45,7 +45,7 @@ function CameraSystemHUDExtension.new(vehicle, uiScale, uiTextColor, uiTextSize)
   self:addComponentForCleanup(self.brandOverlay)
 
   self.texts = {
-    id = g_i18n:getText("cameraSystem_camera_id")
+    id = g_i18n:getText("ui_cameraSystem_id")
   }
 
   self.brandAnimation = TweenSequence.NO_SEQUENCE
