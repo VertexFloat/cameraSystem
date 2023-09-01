@@ -88,6 +88,11 @@ function CameraSystem:loadCameraFromConfig(camerasData)
     local cameraData = camerasData[i]
 
     if cameraData.nodeName ~= nil and self.i3dMappings[cameraData.nodeName] ~= nil then
+      -- we check the visibility due to different configurations (e.g. pipe length) and if the node is hidden, we do not create a camera for this node
+      if not getVisibility(self.i3dMappings[cameraData.nodeName].nodeId) or cameraData.visibilityNodeName ~= nil and self.i3dMappings[cameraData.visibilityNodeName] ~= nil and not getVisibility(self.i3dMappings[cameraData.visibilityNodeName].nodeId) then
+        goto continue
+      end
+
       cameraData.node = self.i3dMappings[cameraData.nodeName].nodeId
     end
 
@@ -96,13 +101,15 @@ function CameraSystem:loadCameraFromConfig(camerasData)
     if camera:loadFromConfig(cameraData) then
       table.insert(spec.cameras, camera)
     end
+
+    ::continue::
   end
 
   spec.numCameras = #spec.cameras
 end
 
 function CameraSystem:getCameraSystemIsReverse()
-  local infoText = g_i18n:getText("cameraSystem_camera_info_reverse")
+  local infoText = g_i18n:getText("ui_cameraSystem_infoReverse")
 
   if SpecializationUtil.hasSpecialization(Drivable, self.specializations) then
     return self:getIsDrivingBackward(), infoText
@@ -112,7 +119,7 @@ function CameraSystem:getCameraSystemIsReverse()
 end
 
 function CameraSystem:getCameraSystemIsLowered()
-  local infoText = string.format(g_i18n:getText("cameraSystem_camera_info_lowered"), self:getName())
+  local infoText = string.format(g_i18n:getText("ui_cameraSystem_infoLowered"), self:getName())
 
   if SpecializationUtil.hasSpecialization(Attachable, self.specializations) then
     return self:getIsLowered(), infoText
@@ -122,7 +129,7 @@ function CameraSystem:getCameraSystemIsLowered()
 end
 
 function CameraSystem:getCameraSystemIsUnfolded()
-  local infoText = string.format(g_i18n:getText("cameraSystem_camera_info_unfolded"), self:getName())
+  local infoText = string.format(g_i18n:getText("ui_cameraSystem_infoUnfolded"), self:getName())
 
   if SpecializationUtil.hasSpecialization(Foldable, self.specializations) then
     return self:getIsUnfolded(), infoText
@@ -132,7 +139,7 @@ function CameraSystem:getCameraSystemIsUnfolded()
 end
 
 function CameraSystem:getCameraSystemIsPipeUnfolded()
-  local infoText = g_i18n:getText("cameraSystem_camera_info_pipeUnfolded")
+  local infoText = g_i18n:getText("ui_cameraSystem_infoPipeUnfolded")
 
   if SpecializationUtil.hasSpecialization(Pipe, self.specializations) then
     return self.spec_pipe.unloadingStates[self.spec_pipe.currentState] == true, infoText
