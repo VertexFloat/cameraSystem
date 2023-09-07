@@ -24,7 +24,6 @@ For more information, vehicle integration instructions, help or a bug report, pl
 
 ATTENTION!
 * to activate the camera system, the vehicle must have their configuration added,
-* some cameras can cause fps drops, unfortunately this is due to the game engine so I can't do anything about it,
 * the image quality of the cameras is the highest I could set, so please bear with me. (The quality of the camera also depends on your graphics settings, it is also possible to manually improve it, details are also on <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></en>
     <de><![CDATA[Diese Modifikation bietet die Möglichkeit, Kameras hinzuzufügen, z. eine Abflussrohrkamera oder eine Rückfahrkamera. Sie können einfach zwischen hinzugefügten Kameras wechseln, die als HUD angezeigt werden.
 Standardmäßig waren einige der ursprünglich verfügbaren <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">Fahrzeuge und Anbaugeräte</a> mit Kamerakonfigurationen ausgestattet.
@@ -41,7 +40,6 @@ Weitere Informationen, Anweisungen zur Fahrzeugintegration, Hilfe oder einen Feh
 
 AUFMERKSAMKEIT!
 * um das Kamerasystem zu aktivieren, muss dem Fahrzeug seine Konfiguration hinzugefügt werden,
-* Bei einigen Kameras kann es zu FPS-Einbrüchen kommen. Leider liegt das an der Spiel-Engine, sodass ich nichts dagegen tun kann,
 * Die Bildqualität der Kameras ist die höchste, die ich einstellen konnte, also haben Sie bitte etwas Geduld. (Die Qualität der Kamera hängt auch von Ihren Grafikeinstellungen ab, es ist auch möglich, sie manuell zu verbessern, Details finden Sie auch auf <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></de>
     <fr><![CDATA[Cette modification donne la possibilité d"ajouter des caméras, par ex. un tuyau d"évacuation ou une caméra de recul. Vous pouvez facilement basculer entre les caméras ajoutées qui sont affichées sous forme de HUD.
 En standard, certains des <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">véhicules et outils</a> disponibles à l'origine étaient équipés de configurations de caméra.
@@ -58,7 +56,6 @@ Pour plus d"informations, des instructions d"intégration de véhicule, de l"aid
 
 ATTENTION!
 * pour activer le système de caméra, le véhicule doit avoir sa configuration ajoutée,
-* certaines caméras peuvent provoquer des baisses de fps, malheureusement cela est dû au moteur de jeu donc je ne peux rien y faire,
 * la qualité d'image des caméras est la plus élevée que je puisse définir, alors soyez indulgent avec moi. (La qualité de la caméra dépend aussi de vos paramètres graphiques, il est aussi possible de l'améliorer manuellement, les détails sont aussi sur <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></fr>
     <pl><![CDATA[Modyfikacja ta daje możliwość dodania kamer np. kamery rury wyładowczej lub kamery wstecznej. Z łatwością można przełączać się między dodanymi kamerami które wyświetlane są w postaci HUD.
 Standardowo część dostępnych oryginalnie <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">pojazdów oraz narzędzi</a> została wyposażona w konfiguracje kamer.
@@ -75,7 +72,6 @@ Po więcej informacji, instrukcje integracji pojazdu, pomoc lub zgłoszenie bł�
 
 UWAGA!
 * żeby aktywować system kamer, pojazd musi mieć dodaną ich konfigurację,
-* niektóre kamery mogą powodować spadki fps, niestety jest to spowodowane silnikiem gry, więc nie mogę nic z tym zrobić,
 * jakość obrazu kamer, jest najwyższa jaką miałem możliwość ustawić, więc proszę o wyrozumiałość. (Jakość kamery zależy również od twoich ustawień graficznych, jest również możliwość manualnego poprawienia jej, szczegóły są również na <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></pl>
   </description>
   <iconFilename>icon_cameraSystem.png</iconFilename>
