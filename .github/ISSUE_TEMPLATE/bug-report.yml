@@ -1,0 +1,74 @@
+name: "🕷️ Bug report"
+description: Report errors or unexpected behavior
+labels:
+- bug
+assignees:
+- 4c65736975
+body:
+- type: markdown
+  attributes:
+    value: Please make sure to [search for existing issues](https://github.com/4c65736975/cameraSystem/issues) before filing a new one!
+
+- type: dropdown
+  id: version
+  attributes:
+    label: Version
+    description: What version of the modification does the problem apply to?
+    options:
+      - 1.0.0.1
+      - 1.0.0.0
+    default: 0
+  validations:
+    required: true
+
+- type: dropdown
+  id: game
+  attributes:
+    label: Game Version
+    description: Check the bottom right corner of the game's main menu.
+    options:
+      - Farming Simulator 22 (1.13.1.1)
+      - Farming Simulator 22 (1.13.1.0)
+      - Farming Simulator 22 (1.12.0.0)
+      - Farming Simulator 22 (1.10.1.1)
+      - Farming Simulator 22 (1.10.1.0)
+      - Farming Simulator 22 (1.9.1.0)
+      - Farming Simulator 22 (1.9.0.0)
+      - Farming Simulator 22 (1.8.2.0)
+      - Farming Simulator 22 (1.8.1.0)
+      - Farming Simulator 22 (1.7.1.0)
+      - Farming Simulator 22 (1.7.0.1)
+      - Farming Simulator 22 (1.7.0.0)
+      - Farming Simulator 22 (1.6.0.0)
+      - Farming Simulator 22 (1.5.0.0)
+      - Farming Simulator 22 (1.4.1.0)
+      - Farming Simulator 22 (1.4.0.0)
+      - Farming Simulator 22 (1.3.1.0)
+      - Farming Simulator 22 (1.3.0.0)
+      - Farming Simulator 22 (1.2.0.2)
+      - Farming Simulator 22 (1.2.0.0)
+    default: 0
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: 👣 Steps to reproduce
+    description: I strongly suggest including screenshots and a bug report log ("C:\Users\USER_NAME\Documents\My Games\FarmingSimulator2022\log.txt").
+    placeholder: Having detailed steps helps me reproduce the bug. 
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: ⭐️ Expected Behavior
+    placeholder: What were you expecting?
+  validations:
+    required: false
+
+- type: textarea
+  attributes:
+    label: ⛔️ Actual Behavior
+    placeholder: What happened instead?
+  validations:
+    required: false
