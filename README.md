@@ -12,6 +12,8 @@
     <a href="https://github.com/4c65736975/cameraSystem/issues">Report Bug</a>
     ·
     <a href="https://github.com/4c65736975/cameraSystem/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/4c65736975/cameraSystem/blob/main/CHANGELOG.md">Changelog</a>
   </p>
 </div>
 <details>
@@ -61,11 +63,6 @@ Change camera system mode (off/on) - "z" key (default)
 <br/>
 Next/previous camera - "left shift + k/m" keys (default)
 
-ATTENTION!
-- to activate the camera system, the vehicle must have their configuration added,
-- some cameras can cause fps drops, unfortunately this is due to the game engine so I can't do anything about it,
-- the image quality of the cameras is the highest I could set, so please bear with me. (The quality of the camera also depends on your graphics settings, it is also possible to manually improve it, details are below)
-
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
 
 ## Getting started
@@ -96,16 +93,6 @@ or
 3. Run modInstaller.exe.
 4. That"s it, if everything went as it should, you can delete downloaded folder and zip file.
 5. Run the game and have a nice time.
-
-### Improvements
-
-You can improve camera quality (dust, effects) by <font color="#f54040">changing</font> the code as shown below. <font color="#f54040">Note that with this change you will get a lua error from time to time, but the game will run fine.</font>
-
-```lua
-src/vehicles/VehicleRenderCamera.lua
-
-local development = false -- change to true
-```
 
 ### Vehicle Integration
 
