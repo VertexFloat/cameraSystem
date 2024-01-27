@@ -32,9 +32,6 @@
           <a href="#installation">Installation</a>
         </li>
         <li>
-          <a href="#improvements">Improvements</a>
-        </li>
-        <li>
           <a href="#vehicle-integration">Vehicle Integration</a>
         </li>
       </ul>
