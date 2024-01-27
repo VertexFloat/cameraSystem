@@ -1,8 +1,9 @@
 -- @author: 4c65736975, All Rights Reserved
--- @version: 1.0.0.0, 09|08|2023
+-- @version: 1.0.0.1, 27|01|2024
 -- @filename: VehicleRenderCamera.lua
 
-local development = false -- if true, better quality but throws lua error (game works fine)
+-- Changelog (1.0.0.1):
+-- fixed game crash in patch 1.13.1.1
 
 VehicleRenderCamera = {}
 
@@ -84,7 +85,7 @@ function VehicleRenderCamera:createRender()
   local resolutionY = (g_screenHeight * .2) * 2
   local aspectRatio = resolutionX / resolutionY
 
-  self.overlay = createRenderOverlay(self.camera, aspectRatio, resolutionX, resolutionY, true, development and 4294967295 or 4278255488, 4294967295, false, 5, false, 0, getCloudQuality())
+  self.overlay = createRenderOverlay(self.camera, aspectRatio, resolutionX, resolutionY, true, 4294967295, 4294967295)
 end
 
 function VehicleRenderCamera:update(dt)
