@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<modDesc descVersion="77">
+<modDesc descVersion="79">
   <author>VertexFloat</author>
-  <version>1.0.0.1</version>
+  <version>1.0.0.2</version>
   <title>
     <en>Camera System</en>
     <de>Kamerasystem</de>
@@ -15,64 +15,40 @@ As standard, some of the originally available <a href="https://github.com/4c6573
 Change camera system mode (off/on) - "z" key (default)
 Next/previous camera - "left shift + k/m" keys (default)
 
-Changelog (1.0.0.1):
-- added more default in-game vehicles and implements support
-- added compatibility with implements
-- improved code
+Changelog (1.0.0.2):
+- fixed game crash in patch 1.13.1.1 (unfortunately the camera quality is slightly worse)
 
-For more information, vehicle integration instructions, help or a bug report, please visit <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
-
-ATTENTION!
-* to activate the camera system, the vehicle must have their configuration added,
-* the image quality of the cameras is the highest I could set, so please bear with me. (The quality of the camera also depends on your graphics settings, it is also possible to manually improve it, details are also on <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></en>
+For more information, vehicle integration instructions, help or a bug report, please visit <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.]]></en>
     <de><![CDATA[Diese Modifikation bietet die Möglichkeit, Kameras hinzuzufügen, z. eine Abflussrohrkamera oder eine Rückfahrkamera. Sie können einfach zwischen hinzugefügten Kameras wechseln, die als HUD angezeigt werden.
 Standardmäßig waren einige der ursprünglich verfügbaren <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">Fahrzeuge und Anbaugeräte</a> mit Kamerakonfigurationen ausgestattet.
 
 Kamerasystemmodus ändern (aus/ein) – „z“-Taste (Standard)
 Nächste/vorherige Kamera – Tasten „linke Umschalttaste + k/m“ (Standard)
 
-Änderungsprotokoll (1.0.0.1):
-- Unterstützung für weitere Standardfahrzeuge und -geräte im Spiel hinzugefügt
-- Implementierungskompatibilität hinzugefügt
-- verbesserter Code
+Änderungsprotokoll (1.0.0.2):
+- Spielabsturz in Patch 1.13.1.1 behoben (leider ist die Kameraqualität etwas schlechter)
 
-Weitere Informationen, Anweisungen zur Fahrzeugintegration, Hilfe oder einen Fehlerbericht finden Sie auf <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
-
-AUFMERKSAMKEIT!
-* um das Kamerasystem zu aktivieren, muss dem Fahrzeug seine Konfiguration hinzugefügt werden,
-* Die Bildqualität der Kameras ist die höchste, die ich einstellen konnte, also haben Sie bitte etwas Geduld. (Die Qualität der Kamera hängt auch von Ihren Grafikeinstellungen ab, es ist auch möglich, sie manuell zu verbessern, Details finden Sie auch auf <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></de>
+Weitere Informationen, Anweisungen zur Fahrzeugintegration, Hilfe oder einen Fehlerbericht finden Sie auf <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.]]></de>
     <fr><![CDATA[Cette modification donne la possibilité d"ajouter des caméras, par ex. un tuyau d"évacuation ou une caméra de recul. Vous pouvez facilement basculer entre les caméras ajoutées qui sont affichées sous forme de HUD.
 En standard, certains des <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">véhicules et outils</a> disponibles à l'origine étaient équipés de configurations de caméra.
 
 Changer le mode système de la caméra (off/on) - touche "z" (par défaut)
 Appareil photo suivant/précédent - touches "shift gauche + k/m" (par défaut)
 
-Journal des modifications (1.0.0.1) :
-- ajout de la prise en charge de plus de véhicules et d'outils par défaut dans le jeu
-- ajout de la compatibilité des outils
-- code amélioré
+Journal des modifications (1.0.0.2) :
+- Correction d'un crash du jeu dans le patch 1.13.1.1 (malheureusement, la qualité de la caméra est légèrement pire)
 
-Pour plus d"informations, des instructions d"intégration de véhicule, de l"aide ou un rapport de bogue, veuillez visiter <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
-
-ATTENTION!
-* pour activer le système de caméra, le véhicule doit avoir sa configuration ajoutée,
-* la qualité d'image des caméras est la plus élevée que je puisse définir, alors soyez indulgent avec moi. (La qualité de la caméra dépend aussi de vos paramètres graphiques, il est aussi possible de l'améliorer manuellement, les détails sont aussi sur <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></fr>
+Pour plus d"informations, des instructions d"intégration de véhicule, de l"aide ou un rapport de bogue, veuillez visiter <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.]]></fr>
     <pl><![CDATA[Modyfikacja ta daje możliwość dodania kamer np. kamery rury wyładowczej lub kamery wstecznej. Z łatwością można przełączać się między dodanymi kamerami które wyświetlane są w postaci HUD.
 Standardowo część dostępnych oryginalnie <a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">pojazdów oraz narzędzi</a> została wyposażona w konfiguracje kamer.
 
 Zmień tryb systemu kamer (wyłączony/włączony) - klawisz "z" (standardowo)
 Następna/poprzednia kamera - klawisze "lewy shift + k/m" (standardowo)
 
-Dziennik zmian (1.0.0.1):
-- dodano wsparcie dla większej ilości domyślnych pojazdów w grze i narzędzi
-- dodano kompatybilność z narzędziami
-- ulepszony kod
+Dziennik zmian (1.0.0.2):
+- naprawiono awarię gry w patchu 1.13.1.1 (niestety jakość kamery jest nieco gorsza)
 
-Po więcej informacji, instrukcje integracji pojazdu, pomoc lub zgłoszenie błędu, odwiedź stronę <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.
-
-UWAGA!
-* żeby aktywować system kamer, pojazd musi mieć dodaną ich konfigurację,
-* jakość obrazu kamer, jest najwyższa jaką miałem możliwość ustawić, więc proszę o wyrozumiałość. (Jakość kamery zależy również od twoich ustawień graficznych, jest również możliwość manualnego poprawienia jej, szczegóły są również na <a href="https://github.com/4c65736975/cameraSystem#improvements">GitHub</a>)]]></pl>
+Po więcej informacji, instrukcje integracji pojazdu, pomoc lub zgłoszenie błędu, odwiedź stronę <a href="https://github.com/4c65736975/cameraSystem">GitHub</a>.]]></pl>
   </description>
   <iconFilename>icon_cameraSystem.png</iconFilename>
   <multiplayer supported="true"/>
