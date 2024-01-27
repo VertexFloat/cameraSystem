@@ -15,6 +15,7 @@ body:
     label: Version
     description: What version of the modification does the problem apply to?
     options:
+      - 1.0.0.2
       - 1.0.0.1
       - 1.0.0.0
     default: 0
@@ -25,7 +26,7 @@ body:
   id: game
   attributes:
     label: Game Version
-    description: Check the bottom right corner of the game's main menu.
+    description: Check the top left corner of the game's main menu.
     options:
       - Farming Simulator 22 (1.13.1.1)
       - Farming Simulator 22 (1.13.1.0)
