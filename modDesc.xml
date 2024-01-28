@@ -71,48 +71,56 @@ Po więcej informacji, pełny dziennik zmian, instrukcje integracji pojazdu, pom
       <de>Ohne Titel</de>
       <fr>Sans titre</fr>
       <pl>Bez nazwy</pl>
+      <ru>Без названия</ru>
     </text>
     <text name="ui_cameraSystem_nameRear">
       <en>Rear</en>
       <de>Rückseite</de>
       <fr>Arrière</fr>
       <pl>Wsteczna</pl>
+      <ru>Сзади</ru>
     </text>
     <text name="ui_cameraSystem_namePipe">
       <en>Pipe</en>
       <de>Entladerohr</de>
       <fr>Buse</fr>
       <pl>Rura wyładowcza</pl>
+      <ru>Разгрузочная труба</ru>
     </text>
     <text name="ui_cameraSystem_nameWork">
       <en>Work area</en>
       <de>Arbeitsbereich</de>
       <fr>Zone de travail</fr>
       <pl>Obszar roboczy</pl>
+      <ru>Сектор обработки</ru>
     </text>
     <text name="ui_cameraSystem_infoReverse">
       <en>Gear must be in reverse!</en>
       <de>Der Gang muss im Rückwärtsgang sein!</de>
       <fr>La vitesse doit être en marche arrière !</fr>
       <pl>Bieg musi być na biegu wstecznym!</pl>
+      <ru>Должна быть включена задняя передача!</ru>
     </text>
     <text name="ui_cameraSystem_infoLowered">
       <en>You need to lower %s!</en>
       <de>Sie müssen %s senken!</de>
       <fr>Vous devez baisser %s !</fr>
       <pl>Musisz opuścić %s!</pl>
+      <ru>Вам нужно понизить %s!</ru>
     </text>
     <text name="ui_cameraSystem_infoUnfolded">
       <en>You need to unfold %s!</en>
       <de>Du musst %s entfalten!</de>
       <fr>Vous devez déplier %s !</fr>
       <pl>Musisz rozłożyć %s!</pl>
+      <ru>Вам нужно развернуть %s!</ru>
     </text>
     <text name="ui_cameraSystem_infoPipeUnfolded">
       <en>The pipe must be unfolded!</en>
       <de>Das Rohr muss entfaltet sein!</de>
       <fr>Le tuyau doit être déplié !</fr>
       <pl>Rura musi być rozłożona!</pl>
+      <ru>Разгрузочную трубу необходимо развернуть!</ru>
     </text>
     <text name="ui_cameraSystem_id">
       <en>%s/%s</en>
@@ -125,36 +133,42 @@ Po więcej informacji, pełny dziennik zmian, instrukcje integracji pojazdu, pom
       <de>Kamerasystem (ein)</de>
       <fr>Système de caméra (activé)</fr>
       <pl>System kamer (włączony)</pl>
+      <ru>Camera System (Вкл)</ru>
     </text>
     <text name="action_cameraSystem_off">
       <en>Camera system (off)</en>
       <de>Kamerasystem (aus)</de>
       <fr>Système de caméra (éteint)</fr>
       <pl>System kamer (wyłączony)</pl>
+      <ru>Camera System (Выкл)</ru>
     </text>
     <text name="action_cameraSystem_switchCamera">
       <en>Switch camera</en>
       <de>Kamera wechseln</de>
       <fr>Changer de caméra</fr>
       <pl>Zmień kamerę</pl>
+      <ru>Переключить камеру</ru>
     </text>
     <text name="input_TOGGLE_CAMERA_SYSTEM">
       <en>Change camera system mode</en>
       <de>Ändern Sie den Kamerasystemmodus</de>
       <fr>Changer le mode du système de caméra</fr>
       <pl>Zmień tryb systemu kamer</pl>
+      <ru>Изменить режим Camera System</ru>
     </text>
     <text name="input_TOGGLE_CAMERA_SYSTEM_CAMERA_1">
       <en>Switch to the next camera</en>
       <de>Zur nächsten Kamera wechseln</de>
       <fr>Passer à la caméra suivante</fr>
       <pl>Przełącz na następną kamerę</pl>
+      <ru>Переключиться на следующую камеру</ru>
     </text>
     <text name="input_TOGGLE_CAMERA_SYSTEM_CAMERA_2">
       <en>Switch to the previous camera</en>
       <de>Wechseln Sie zur vorherigen Kamera</de>
       <fr>Passer à la caméra précédente</fr>
       <pl>Przełącz na poprzednią kamerę</pl>
+      <ru>Переключиться на предыдущую камеру</ru>
     </text>
   </l10n>
 
