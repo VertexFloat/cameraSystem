@@ -69,8 +69,8 @@ If you want to install latest official version, you can [download](https://www.f
 
 ### Prerequisites
 
-* [Farming Simulator 22 (PC)](https://www.farming-simulator.com/buy-now.php?platform=pc&code=DANIO)
-* [Farming Simulator 22 (PC-Download)](https://www.farming-simulator.com/buy-now.php?platform=pcdigital&code=DANIO)
+* [Farming Simulator 22 (PC)](https://www.farming-simulator.com/buy-now.php?platform=pc&code=VertexFloat)
+* [Farming Simulator 22 (PC-Download)](https://www.farming-simulator.com/buy-now.php?platform=pcdigital&code=VertexFloat)
 
 ### Installation
 
