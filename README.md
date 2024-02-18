@@ -1,7 +1,7 @@
 <div id="top"></div>
 <br/>
 <div align="center">
-  <a href="https://github.com/4c65736975/cameraSystem">
+  <a href="https://github.com/VertexFloat/cameraSystem">
     <img src="screenshots/icon.png" alt="Logo" width="128" height="128">
   </a>
   <h3>Camera System</h3>
@@ -9,11 +9,11 @@
     Farming Simulator 22 Modification
     <br/>
     <br/>
-    <a href="https://github.com/4c65736975/cameraSystem/issues">Report Bug</a>
+    <a href="https://github.com/VertexFloat/cameraSystem/issues">Report Bug</a>
     ·
-    <a href="https://github.com/4c65736975/cameraSystem/issues">Request Feature</a>
+    <a href="https://github.com/VertexFloat/cameraSystem/issues">Request Feature</a>
     ·
-    <a href="https://github.com/4c65736975/cameraSystem/blob/main/CHANGELOG.md">Changelog</a>
+    <a href="https://github.com/VertexFloat/cameraSystem/blob/main/CHANGELOG.md">Changelog</a>
   </p>
 </div>
 <details>
@@ -76,7 +76,7 @@ If you want to install latest official version, you can [download](https://www.f
 
 1. Clone the repo
 ```sh
-git clone https://github.com/4c65736975/cameraSystem
+git clone https://github.com/VertexFloat/cameraSystem
 ```
 2. Open cloned folder.
 3. Run modInstaller.exe.
@@ -93,7 +93,7 @@ or
 
 ### Vehicle Integration
 
-You can just copy code below and fill it with appropriate data type. (<a href="https://github.com/4c65736975/cameraSystem/blob/main/VEHICLES.md">Here</a> you will find a list of vehicles integrated by default)
+You can just copy code below and fill it with appropriate data type. (<a href="https://github.com/VertexFloat/cameraSystem/blob/main/VEHICLES.md">Here</a> you will find a list of vehicles integrated by default)
 
 ```xml
 <cameraSystem>
@@ -193,7 +193,7 @@ Prefixes for specific paths:
 
 ## License
 
-Distributed under the GPL-3.0 license. See [LICENSE](https://github.com/4c65736975/cameraSystem/blob/main/LICENSE) for more information.
+Distributed under the GPL-3.0 license. See [LICENSE](https://github.com/VertexFloat/cameraSystem/blob/main/LICENSE) for more information.
 
 <p align="right">&#x2191 <a href="#top">back to top</a></p>
 
