@@ -6,7 +6,7 @@
   </a>
   <h3>Camera System</h3>
   <p>
-    Farming Simulator 22 Modification
+    Farming Simulator Modification
     <br/>
     <br/>
     <a href="https://github.com/VertexFloat/cameraSystem/issues">Report Bug</a>
@@ -74,22 +74,21 @@ If you want to install latest official version, you can [download](https://www.f
 
 ### Installation
 
-1. Clone the repo
-```sh
-git clone https://github.com/VertexFloat/cameraSystem
-```
-2. Open cloned folder.
-3. Run modInstaller.exe.
-4. That"s it, if everything went as it should, you can delete cloned folder.
-5. Run the game and have a nice time.
+#### Method 1:
 
-or
+1. `git clone https://github.com/VertexFloat/cameraSystem`
+2. Open the cloned folder.
+3. Run `modInstaller.exe`.
 
-1. Click code, download zip.
-2. Extract downloaded file.
-3. Run modInstaller.exe.
-4. That"s it, if everything went as it should, you can delete downloaded folder and zip file.
-5. Run the game and have a nice time.
+If everything went as expected, you can delete the cloned folder. Run the game and have a nice time!
+
+#### Method 2:
+
+1. Click the `Code` button and download the ZIP file.
+2. Extract the downloaded file.
+3. Run `modInstaller.exe`.
+
+If everything went as expected, you can delete the extracted folder and the ZIP file. Run the game and have a nice time!
 
 ### Vehicle Integration
 
